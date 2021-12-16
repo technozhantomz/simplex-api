@@ -40,6 +40,10 @@ exports.default = function (app) {
       }
     };
     var baseDigital = {
+      BSC: {
+        symbol: 'BSC',
+        name: 'Binance'
+      },
       BTC: {
         symbol: 'BTC',
         name: 'Bitcoin'
@@ -47,6 +51,10 @@ exports.default = function (app) {
       ETH: {
         symbol: 'ETH',
         name: 'Ether'
+      },
+      MATIC: {
+        symbol: 'MATIC',
+        name: 'Polygon'
       }
     };
 

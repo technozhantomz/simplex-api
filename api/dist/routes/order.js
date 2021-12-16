@@ -55,6 +55,7 @@ var validateMinMax = function validateMinMax(val) {
 };
 var validateAddress = function validateAddress(val) {
   var maybeValid = _config.simplex.validDigital.filter(function (cryptoSymbol) {
+    cryptoSymbol = cryptoSymbol === 'BNB' || cryptoSymbol === 'MATIC' ? 'ETH' : cryptoSymbol;
     return _walletAddressValidator2.default.validate(val, cryptoSymbol);
   });
   return maybeValid.length > 0;

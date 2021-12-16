@@ -15,9 +15,9 @@ QUOTE_EP=https://sandbox.test-simplexcc.com/wallet/merchant/v2/quote
 ORDER_EP=https://sandbox.test-simplexcc.com/wallet/merchant/v2/payments/partner/data
 PAYMENT_EP=https://sandbox.test-simplexcc.com/payments/new
 SIMPLEX_APIKEY=
-RECAPTCHA_SITE_KEY=
-RECAPTCHA_SECRET_KEY=
-API_HOST=
+RECAPTCHA_SITE_KEY=6LdhOagdAAAAAFL2rvkXOdJe5uAMnTWucYlRFJLj
+RECAPTCHA_SECRET_KEY=6LdhOagdAAAAAPmatki0FRSVYc91kQGOSltFMPfe
+API_HOST=www
 
 API_KEY=
 API_KEY_HEADER=apikey
@@ -36,7 +36,7 @@ To start the two components locally run ```npm start``` in the api directory fir
 
 ## Running the tests
 ```
-npm run test
+ls
 ```
 
 ## Full Dockerized Deployment

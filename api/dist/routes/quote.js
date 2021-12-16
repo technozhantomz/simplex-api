@@ -73,7 +73,7 @@ var schema = {
   }
 };
 
-logger.info('TESTTTTTT');
+logger.info('TESTTTTTT ');
 
 var validator = (0, _validator2.default)(schema);
 
@@ -100,6 +100,7 @@ exports.default = function (app) {
       (0, _simplex.getQuote)(reqObj).then(function (result) {
         logger.info('result', result);
         debugResponse(result);
+        if (result.error) throw new Error(result.error);
         (0, _mangodb.Order)({
           user_id: userId,
           quote_id: result.quote_id,
