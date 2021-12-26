@@ -33,7 +33,7 @@ const validateMinMax = val => {
 }
 const validateAddress = val => {
   const maybeValid = simplex.validDigital.filter(cryptoSymbol => {
-    cryptoSymbol = cryptoSymbol === 'BNB' || cryptoSymbol === 'MATIC' ? 'ETH' : cryptoSymbol
+    cryptoSymbol = cryptoSymbol === 'BTC' || cryptoSymbol === 'USD' ? 'KES' : cryptoSymbol
     return wav.validate(val, cryptoSymbol)
   })
   return maybeValid.length > 0
@@ -191,7 +191,7 @@ export default (app) => {
                 payment_post_url: simplex.paymentEP.replace(/\u200B/g, ''),
                 version: simplex.apiVersion,
                 partner: simplex.walletID,
-                return_url: 'https://www.myetherwallet.com',
+                return_url: 'https://commodity.llc',
                 quote_id: quoteId,
                 payment_id: paymentId,
                 user_id: userId,

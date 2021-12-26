@@ -29,32 +29,16 @@ exports.default = function (app) {
       EUR: {
         symbol: 'EUR',
         name: 'Euro'
-      },
-      CAD: {
-        symbol: 'CAD',
-        name: 'Canadian Dollar'
-      },
-      JPY: {
-        symbol: 'JPY',
-        name: 'Japanese Yen'
       }
     };
     var baseDigital = {
-      BSC: {
-        symbol: 'BSC',
-        name: 'Binance'
-      },
       BTC: {
         symbol: 'BTC',
         name: 'Bitcoin'
       },
-      ETH: {
-        symbol: 'ETH',
-        name: 'Ether'
-      },
-      MATIC: {
-        symbol: 'MATIC',
-        name: 'Polygon'
+      KES: {
+        symbol: 'KES',
+        name: 'Kenya Shilling'
       }
     };
 

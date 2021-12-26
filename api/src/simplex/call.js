@@ -14,7 +14,7 @@ export default (body, path) => {
     var options = {
       url: path,
       headers: {
-        'Authorization': 'ApiKey ' + simplex.apiKey
+        'Authorization': 'ApiKey ' + simplex.apiKeys
       },
       body: body,
       method: 'post',

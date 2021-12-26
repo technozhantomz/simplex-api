@@ -1,8 +1,24 @@
 const fiat = [
   "USD",
-  "EUR"
+  "EUR",
+  "CAD",
+  "JPY",
+  "GBP",
+  "RUB",
+  "AUD",
+  "KRW",
+  "CHF",
+  "CZK",
+  "DKK",
+  "NOK",
+  "NZD",
+  "PLN",
+  "SEK",
+  "TRY",
+  "ZAR",
+  "HUF"
 ];
-const crypto = ["ETH"];
+const crypto = ["BTC", "ETH", "BNB", "MATIC"];
 
 const handler = function (defaultValue = 42) {
   return {
