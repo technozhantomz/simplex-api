@@ -191,7 +191,7 @@ export default (app) => {
                 payment_post_url: simplex.paymentEP.replace(/\u200B/g, ''),
                 version: simplex.apiVersion,
                 partner: simplex.walletID,
-                return_url: 'https://www.myetherwallet.com',
+                return_url: 'http://127.0.0.1:8080',
                 quote_id: quoteId,
                 payment_id: paymentId,
                 user_id: userId,
