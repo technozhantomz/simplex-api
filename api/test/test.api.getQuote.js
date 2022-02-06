@@ -166,5 +166,5 @@ describe('API getQuote Test', () => {
                 assert.equal(result.digital_total_amount_currency, quoteResponse.digital_money.currency)
                 done();
             })
-    }).timeout(10000)
+    }).timeout(5000)
 })

@@ -29,7 +29,7 @@ exports.default = function (body, path) {
     var options = {
       url: path,
       headers: {
-        'Authorization': 'ApiKey ' + _config.simplex.apiKeys
+        'Authorization': 'ApiKey ' + _config.simplex.apiKey
       },
       body: body,
       method: 'post',

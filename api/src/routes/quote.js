@@ -77,7 +77,7 @@ export default (app) => {
       getQuote(reqObj).then((result) => {
         logger.info('result', result)
         debugResponse(result)
-        if (result.error) throw new Error(result.error)
+        if (result.error) throw new Error(result.error);
         Order({
           user_id: userId,
           quote_id: result.quote_id,

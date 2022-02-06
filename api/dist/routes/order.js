@@ -55,7 +55,7 @@ var validateMinMax = function validateMinMax(val) {
 };
 var validateAddress = function validateAddress(val) {
   var maybeValid = _config.simplex.validDigital.filter(function (cryptoSymbol) {
-    cryptoSymbol = cryptoSymbol === 'BTC' || cryptoSymbol === 'USD' ? 'KES' : cryptoSymbol;
+    cryptoSymbol = cryptoSymbol === "BNB" || cryptoSymbol === "MATIC" ? "ETH" : cryptoSymbol;
     return _walletAddressValidator2.default.validate(val, cryptoSymbol);
   });
   return maybeValid.length > 0;
@@ -215,7 +215,7 @@ exports.default = function (app) {
                 payment_post_url: _config.simplex.paymentEP.replace(/\u200B/g, ''),
                 version: _config.simplex.apiVersion,
                 partner: _config.simplex.walletID,
-                return_url: 'https://commodity.llc',
+                return_url: 'https://www.myetherwallet.com',
                 quote_id: quoteId,
                 payment_id: paymentId,
                 user_id: userId,

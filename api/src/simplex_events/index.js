@@ -1,10 +1,10 @@
-//import getEvents from './retrieveEvents'
-//import cron from 'node-cron'
+import getEvents from './retrieveEvents'
+import cron from 'node-cron'
 
 import createLogger from 'logging'
-//const logger = createLogger('simplex_events/index.js')
+const logger = createLogger('simplex_events/index.js')
 
-const runCron = () => {/*
+const runCron = () => {
   console.log('cron setup for simplex events')
   const cronTime = '* * * * *'
   return cron.schedule(cronTime, () => {
@@ -20,6 +20,6 @@ const runCron = () => {/*
       logger.error(e)
     }
   })
-*/}
+}
 
 export default runCron
