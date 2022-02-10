@@ -215,7 +215,7 @@ exports.default = function (app) {
                 payment_post_url: _config.simplex.paymentEP.replace(/\u200B/g, ''),
                 version: _config.simplex.apiVersion,
                 partner: _config.simplex.walletID,
-                return_url: 'https://www.myetherwallet.com',
+                return_url: 'https://commodity.llc',
                 quote_id: quoteId,
                 payment_id: paymentId,
                 user_id: userId,

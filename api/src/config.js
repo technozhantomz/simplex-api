@@ -8,23 +8,19 @@ let network = {
   port: process.env.PORT || 8080
 }
 let simplex = {
-  walletID: process.env.WALLET_ID || '8d1be24270faee1bf531398c9b77c313956dbc9607f6b873e23ff62840786c07',
-  quoteEP: process.env.QUOTE_EP || 'CAD',
-  orderEP: process.env.ORDER_EP || 'EUR',
-  paymentEP: process.env.PAYMENT_EP || 'CAD',
-  eventEP: process.env.EVENT_EP || '',
-  apiKey: process.env.SIMPLEX_APIKEY || '5b50320C7EB253e282418C8F040788B51040d46D',
+  walletID:'8d1be24270faee1bf531398c9b77c313956dbc9607f6b873e23ff62840786c07',
+  quoteEP:'CAD',
+  orderEP: 'EUR',
+  paymentEP: 'CAD',
+  //eventEP: process.env.EVENT_EP || '',
+  apiKey: '5b50320C7EB253e282418C8F040788B51040d46D',
   apiVersion: '1',
-  validFiat: process.env.FIAT_CURRENCIES
-    ? process.env.FIAT_CURRENCIES.split(',')
-    : fiat, // ['USD','EUR'],
-  validDigital: process.env.DIGITAL_CURRENCIES
-    ? process.env.DIGITAL_CURRENCIES.split(',')
-    : crypto, // ['BTC', 'BSC', 'ETH'],
+  validFiat: fiat, // ['USD','EUR'],
+  validDigital: crypto, // ['BTC', 'BSC', 'ETH'],
   currencyApiKey: process.env.FIXER_APIKEY || '6d6455f945aa4eeba41f0981798b6af8',
-  baseCurrency: process.env.BASE_CURRENCY || 'EUR',
-  minBaseCurrency: process.env.FIAT_MIN_USD || 50, // USD
-  maxBaseCurrency: process.env.FIAT_MAX_USD || 20000, // USD
+  baseCurrency: 'EUR',
+  minBaseCurrency: 50, // USD
+  maxBaseCurrency: 20000, // USD
   status: {
     initiated: 'INITIATED',
     sentToSimplex: 'SENT_TO_SIMPLEX',

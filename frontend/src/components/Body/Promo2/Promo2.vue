@@ -15,7 +15,7 @@
                     </div>
                     <div class="text-container">
                         <h3>Reasonable fee</h3>
-                        <p>Extra charges apply in addition to the rate provided, including a 1% MyEtherWallet fee.</p>
+                        <p>Extra charges apply in addition to the rate provided, including a 2% commodityLLC fee.</p>
                     </div>
                 </div>
                 <div>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="text-container">
                         <h3>Instant support</h3>
-                        <p>Feel free to contact <a href="mailto:support@simplex.com" style="color: rgb(135, 153, 171)" >support@simplex.com </a> should you have questions</p>
+                        <p>Feel free to contact <a href="mailto:support@commodity.llc" style="color: rgb(135, 153, 171)" >support@commodity.llc </a> should you have questions</p>
                     </div>
                 </div>
             </div>

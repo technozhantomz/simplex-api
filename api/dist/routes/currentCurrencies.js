@@ -1,60 +1,44 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _response = require("../response");
+var _response = require('../response');
 
 var _response2 = _interopRequireDefault(_response);
 
-var _debug = require("debug");
+var _debug = require('debug');
 
 var _debug2 = _interopRequireDefault(_debug);
 
-var _config = require("../config");
+var _config = require('../config');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var debugRequest = (0, _debug2.default)("request:info");
+var debugRequest = (0, _debug2.default)('request:info');
 
 exports.default = function (app) {
-  app.get("/current-currencies", function (req, res) {
-    debugRequest("Current Currencies Request Received");
+  app.get('/current-currencies', function (req, res) {
+    debugRequest('Current Currencies Request Received');
     var baseFiat = {
       USD: {
-        symbol: "USD",
-        name: "US Dollar"
+        symbol: 'USD',
+        name: 'US Dollar'
       },
       EUR: {
-        symbol: "EUR",
-        name: "Euro"
-      },
-      CAD: {
-        symbol: "CAD",
-        name: "Canadian Dollar"
-      },
-      JPY: {
-        symbol: "JPY",
-        name: "Japanese Yen"
+        symbol: 'EUR',
+        name: 'Euro'
       }
     };
     var baseDigital = {
-      BSC: {
-        symbol: "BSC",
-        name: "Binance"
-      },
       BTC: {
-        symbol: "BTC",
-        name: "Bitcoin"
+        symbol: 'BTC',
+        name: 'Bitcoin'
       },
-      ETH: {
-        symbol: "ETH",
-        name: "Ether"
-      },
-      MATIC: {
-        symbol: "MATIC",
-        name: "Polygon"
+      KES: {
+        symbol: 'KES',
+        name: 'Kenya Shilling'
       }
     };
 

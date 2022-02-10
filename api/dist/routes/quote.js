@@ -73,7 +73,7 @@ var schema = {
   }
 };
 
-logger.info('TESTTTTTT ');
+logger.info('KES TEST ');
 
 var validator = (0, _validator2.default)(schema);
 

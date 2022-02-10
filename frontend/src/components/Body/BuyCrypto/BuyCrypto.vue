@@ -7,7 +7,7 @@
             <img class="mew-logo-image" src="~@/assets/images/logo.png" />
           </div>
           <div class="text-contents">
-            <h1 class="large-title">Buy Ethereum at Lower Rates</h1>
+            <h1 class="large-title">Buy commodityies at Lower Rates</h1>
           </div>
           <div class="powered-by">
             <div class="simplex">
@@ -87,7 +87,7 @@
                 BTC Address
                 <span
                   ><a
-                    href="https://www.myetherwallet.com"
+                    href="https://www.commodity.llc"
                     target="_blank"
                     style="text-decoration: none"
                     >Don't have one?</a
@@ -96,15 +96,13 @@
               </h4>
               <h4
                 v-if="
-                  digitalCurrency === 'ETH' ||
-                    digitalCurrency === 'BNB' ||
-                    digitalCurrency === 'MATIC'
+                  digitalCurrency === 'KES'
                 "
               >
                 {{ digitalCurrency }} Address
                 <span
                   ><a
-                    href="https://www.myetherwallet.com/create-wallet"
+                    href="https://www.commodity.llc/create-wallet"
                     target="_blank"
                     style="text-decoration: none"
                     >Don't have one?</a

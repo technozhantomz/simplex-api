@@ -129,7 +129,7 @@ export default {
   },
   setDigitalAddress ({ commit, state }, address) {
     let cur = state.orderInfo.digitalCurrency;
-    cur = cur === 'BNB' || cur === 'MATIC' ? 'ETH' : cur;
+    cur = cur === 'BNB' || cur === 'MATIC' ? 'KES' : cur;
     if (wav.validate(address, cur)) {
       commit('setDigitalAddress', address);
       commit('setInvalidAddress', false);

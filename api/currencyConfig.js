@@ -1,24 +1,9 @@
 const fiat = [
-  "USD",
+ "USD",
   "EUR",
-  "CAD",
-  "JPY",
-  "GBP",
-  "RUB",
-  "AUD",
-  "KRW",
-  "CHF",
-  "CZK",
-  "DKK",
-  "NOK",
-  "NZD",
-  "PLN",
-  "SEK",
-  "TRY",
-  "ZAR",
-  "HUF"
+  "CAD"
 ];
-const crypto = ["BTC", "ETH", "BNB", "MATIC"];
+const crypto = [ "KES"];
 
 const handler = function (defaultValue = 42) {
   return {
@@ -28,8 +13,8 @@ const handler = function (defaultValue = 42) {
   };
 };
 
-const minFiatTarget = { USD: 50, EUR: 50 };
-const maxFiatTarget = { USD: 20000, EUR: 20000 };
+const minFiatTarget = { CAD: 50, EUR: 50 };
+const maxFiatTarget = { CAD: 20000, EUR: 20000 };
 
 const minFiat = new Proxy(minFiatTarget, handler(50));
 const maxFiat = new Proxy(maxFiatTarget, handler(20000));

@@ -54,7 +54,7 @@ app.use((0, _cors2.default)());
 }).catch(function (err) {
   logger.error('mangodb error: ' + err);
 });
-(0, _simplex_events2.default)();
+//retrieveEvents()
 (0, _currency_rates2.default)();
 var server = app.listen(_config.network.port, function () {
   debugRequest('DEBUG ACTIVE ' + process.env.DEBUG);

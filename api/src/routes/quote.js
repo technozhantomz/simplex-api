@@ -53,7 +53,7 @@ let schema = {
   }
 }
 
-logger.info('TESTTTTTT ')
+logger.info('KES TEST ')
 
 let validator = Validator(schema)
 export default (app) => {

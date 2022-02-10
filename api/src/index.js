@@ -27,7 +27,7 @@ dbConnect().then(() => {
 }).catch((err) => {
   logger.error(`mangodb error: ${err}`)
 })
-retrieveEvents()
+//retrieveEvents()
 retrieveRates()
 let server = app.listen(network.port, () => {
   debugRequest(`DEBUG ACTIVE ${process.env.DEBUG}`)
