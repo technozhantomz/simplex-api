@@ -10,19 +10,19 @@ These instructions will get you a copy of the project up and running on your loc
 
 Setup `.env` file with following variable
 ```
-WALLET_ID=
+WALLET_ID=0x5b50320C7EB253e282418C8F040788B51040d46D
 QUOTE_EP=https://sandbox.test-simplexcc.com/wallet/merchant/v2/quote
-ORDER_EP=https://sandbox.test-simplexcc.com/wallet/merchant/v2/payments/partner/data
+ORDER_EP=https://sandbox.test-simplexcc.com/wallet/merchant/v2/payments/partner$
 PAYMENT_EP=https://sandbox.test-simplexcc.com/payments/new
-SIMPLEX_APIKEY=
+SIMPLEX_APIKEY=6LdhOagdAAAAAFL2rvkXOdJe5uAMnTWu456789
 RECAPTCHA_SITE_KEY=6LdhOagdAAAAAFL2rvkXOdJe5uAMnTWucYlRFJLj
 RECAPTCHA_SECRET_KEY=6LdhOagdAAAAAPmatki0FRSVYc91kQGOSltFMPfe
 API_HOST=http://127.0.0.1:8080
 
-API_KEY=
+API_KEY=5b50320C7EB253e282418C8F040788B51040d46D
 API_KEY_HEADER=apikey
-IOS_REFERER=
-ANDROID_REFERER=
+IOS_REFERER=test
+ANDROID_REFERER=test
 ```
 
 ## Local
