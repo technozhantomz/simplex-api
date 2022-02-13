@@ -12,7 +12,7 @@ Setup `.env` file with following variable
 ```
 WALLET_ID=0x5b50320C7EB253e282418C8F040788B51040d46D
 QUOTE_EP=https://sandbox.test-simplexcc.com/wallet/merchant/v2/quote
-ORDER_EP=https://sandbox.test-simplexcc.com/wallet/merchant/v2/payments/partner$
+ORDER_EP=https://sandbox.test-simplexcc.com/wallet/merchant/v2/payments/partner/data
 PAYMENT_EP=https://sandbox.test-simplexcc.com/payments/new
 SIMPLEX_APIKEY=6LdhOagdAAAAAFL2rvkXOdJe5uAMnTWu456789
 RECAPTCHA_SITE_KEY=6LdhOagdAAAAAFL2rvkXOdJe5uAMnTWucYlRFJLj
@@ -76,7 +76,7 @@ server {
     server {
         listen 80;
         listen [::]:80;
-        server_name apiSubDomain.myDomain.com;
+        server_name booker.commodity.llc;
         location / {
             proxy_pass http://api:8080;
             proxy_set_header Host            $host;
@@ -86,7 +86,7 @@ server {
         server {
             listen 80;
             listen [::]:80;
-            server_name frontendSubDomain.myDomain.com;
+            server_name gateway.commodity.llc;
             location / {
                 proxy_pass http://frontend:8080;
                 proxy_set_header Host            $host;
