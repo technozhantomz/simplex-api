@@ -23,8 +23,8 @@ exports.default = function (app) {
     debugRequest('Current Currencies Request Received');
     var baseFiat = {
       USD: {
-        symbol: 'USD',
-        name: 'US Dollar'
+        symbol: 'CAD',
+        name: 'Canadian Dollar'
       },
       EUR: {
         symbol: 'EUR',

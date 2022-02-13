@@ -3,7 +3,7 @@
         <div class="page-container">
             <div class="text-button-container">
                 <div class="text-block">
-                    <h1>Buy commodities at Lower Rates</h1>
+                    <h1>Buy Commodities at Lower Rates</h1>
                 </div>
                 <div class="button-block">
                     <div class="submit-button-container">
@@ -16,7 +16,7 @@
                     <p></p>
                 </div>
                 <div class="copyright">
-                    <p>© 2022 commodityLLC Inc.</p>
+                    <p>© 2018 MyEtherWallet Inc.</p>
                     <p>All rights reserved</p>
                 </div>
             </div>

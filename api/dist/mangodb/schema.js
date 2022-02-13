@@ -22,7 +22,7 @@ var orderSchema = new Schema({
   user_id: {
     type: String,
     required: true
-    // unique: true
+    //unique: true
   },
   quote_id: {
     type: String,

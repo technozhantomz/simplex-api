@@ -13,8 +13,8 @@ const handler = function (defaultValue = 42) {
   };
 };
 
-const minFiatTarget = { EUR: 50, CAD: 50 };
-const maxFiatTarget = { EUR: 20000, CAD: 20000 };
+const minFiatTarget = { CAD: 50, EUR: 50 };
+const maxFiatTarget = { CAD: 20000, EUR: 20000 };
 
 const minFiat = new Proxy(minFiatTarget, handler(50));
 const maxFiat = new Proxy(maxFiatTarget, handler(20000));

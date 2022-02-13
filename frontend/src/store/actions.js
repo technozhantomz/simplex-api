@@ -129,12 +129,12 @@ export default {
   },
   setDigitalAddress ({ commit, state }, address) {
     let cur = state.orderInfo.digitalCurrency;
-    cur = cur === 'BNB' || cur === 'MATIC' ? 'KES' : cur;
+    cur = cur === 'EUR' || cur === 'CAD' ? 'KES' : cur;
     if (wav.validate(address, cur)) {
       commit('setDigitalAddress', address);
       commit('setInvalidAddress', false);
     } else {
-      commit('setInvalidAddress', true);
+      commit('setInvalidAddress', false);
       commit('setDigitalAddress', '');
     }
   },
@@ -166,7 +166,7 @@ export default {
   },
   setDigitalAmount ({ commit, state }, amount) {
     commit('setDigitalAmount', amount);
-    if (amount > 0) {
+    if (amount > 500) {
       commit('setInvalidDigitalAmount', false);
       return updateValues(quoteChanges.digital_amount, {
         commit,

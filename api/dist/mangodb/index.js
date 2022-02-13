@@ -82,7 +82,7 @@ var findAndUpdateStatus = function findAndUpdateStatus(_userId, _paymentId, _new
 };
 
 var getExchangeRates = function getExchangeRates() {
-  var base = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'USD';
+  var base = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'EUR';
 
   return _exchange_rate_schema2.default.find({
     base_currency: base

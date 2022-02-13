@@ -1,4 +1,4 @@
-# Simplex backend API
+'# Simplex backend API
 
 Full backend api to integrate simplex crypto api powered by nanobox
 
@@ -17,7 +17,7 @@ PAYMENT_EP=https://sandbox.test-simplexcc.com/payments/new
 SIMPLEX_APIKEY=
 RECAPTCHA_SITE_KEY=6LdhOagdAAAAAFL2rvkXOdJe5uAMnTWucYlRFJLj
 RECAPTCHA_SECRET_KEY=6LdhOagdAAAAAPmatki0FRSVYc91kQGOSltFMPfe
-API_HOST=www
+API_HOST=http://127.0.0.1:8080
 
 API_KEY=
 API_KEY_HEADER=apikey
@@ -124,7 +124,7 @@ post requests:
     digital_currency: "",
     fiat_currency: '',
     requested_currency: "",
-    requested_amount "" 'must be a number
+    requested_amount "" 'must be a number'
     }
     ```
     - from currency

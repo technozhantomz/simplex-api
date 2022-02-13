@@ -7,11 +7,11 @@
             <img class="mew-logo-image" src="~@/assets/images/logo.png" />
           </div>
           <div class="text-contents">
-            <h1 class="large-title">Buy commodityies at Lower Rates</h1>
+            <h2 class="large-title">Buy assets using Card or Mobile money</h2>
           </div>
           <div class="powered-by">
             <div class="simplex">
-              <span>Powered by</span>
+              <span>3-D Card security Powered by</span>
               <img class="mew-logo-image" src="~@/assets/images/simplex.png" />
             </div>
             <div class="visa-master">
@@ -83,29 +83,18 @@
             </div>
             <!-- .price-amount -->
             <div class="btc-address">
-              <h4 v-if="digitalCurrency === 'BTC'">
-                BTC Address
-                <span
-                  ><a
-                    href="https://www.commodity.llc"
-                    target="_blank"
-                    style="text-decoration: none"
-                    >Don't have one?</a
-                  ></span
-                >
-              </h4>
               <h4
                 v-if="
                   digitalCurrency === 'KES'
                 "
               >
-                {{ digitalCurrency }} Address
+                 Your Commodity-LLC account name ?
                 <span
                   ><a
                     href="https://www.commodity.llc/create-wallet"
                     target="_blank"
                     style="text-decoration: none"
-                    >Don't have one?</a
+                    > Don't have account? </a
                   ></span
                 >
               </h4>
@@ -113,7 +102,7 @@
                 v-model="digitalAddress"
                 type="text"
                 name=""
-                placeholder="Please enter the address"
+                placeholder="Please enter the account name"
                 :class="{ 'invalid-field': isInvalidAddress }"
               />
               <div class="loading-indicator" v-show="loading">
@@ -136,13 +125,13 @@
               :formData="formData"
             />
             <div class="submit-button-container">
-              <p>You will be redirected to the partner's site</p>
+              <p>Redirecting to Bank & Mobile money gateway...</p>
             </div>
           </div>
           <!-- .buy-form-container -->
           <div class="powered-by-mobile">
             <div class="simplex">
-              <span>Powered by</span>
+              <span>3-D Card security Powered by</span>
               <img class="mew-logo-image" src="~@/assets/images/simplex.png" />
             </div>
             <div class="visa-master">

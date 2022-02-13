@@ -64,7 +64,7 @@ let findAndUpdateStatus = (_userId, _paymentId, _newVals) => {
   }, _newVals)
 }
 
-let getExchangeRates = (base = 'USD') => {
+let getExchangeRates = (base = 'EUR') => {
   return ExchangeRateSchema.find({
     base_currency: base
   })

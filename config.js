@@ -17,14 +17,14 @@ let simplex = {
   apiVersion: "1",
   validFiat: process.env.FIAT_CURRENCIES
     ? process.env.FIAT_CURRENCIES.split(",")
-    :  ['CAD','EUR'],
+    : fiat, // ['USD','EUR'],
   validDigital: process.env.DIGITAL_CURRENCIES
     ? process.env.DIGITAL_CURRENCIES.split(",")
-    : ['BTC','LLC'],
-  currencyApiKey: "6d6455f945aa4eeba41f0981798b6af8",
-  baseCurrency: process.env.BASE_CURRENCY || "EUR",
-  minBaseCurrency: process.env.FIAT_MIN_USD || 50, // EUR
-  maxBaseCurrency: process.env.FIAT_MAX_USD || 20000, // EUR
+    : crypto, // ['BTC', 'BSC', 'ETH'],
+  currencyApiKey: process.env.FIXER_APIKEY || "",
+  baseCurrency: process.env.BASE_CURRENCY || "USD",
+  minBaseCurrency: process.env.FIAT_MIN_USD || 50, // USD
+  maxBaseCurrency: process.env.FIAT_MAX_USD || 20000, // USD
   status: {
     initiated: "INITIATED",
     sentToSimplex: "SENT_TO_SIMPLEX",
@@ -39,9 +39,9 @@ let mangodb = {
   name: "gonano"
 };
 let recaptcha = {
-  siteKey: '6Lcyv6cdAAAAAIRdu0-f8wFH36MIVD30mfF4iMWk',
-  secretKey:  '6Lcyv6cdAAAAAKdpta7iob_Z4aXF-6Zv_593TOEj'
-}
+  siteKey: process.env.RECAPTCHA_SITE_KEY || "",
+  secretKey: process.env.RECAPTCHA_SECRET_KEY || ""
+};
 let env = {
   mode: process.env.NODE_ENV || "production",
   dev: {

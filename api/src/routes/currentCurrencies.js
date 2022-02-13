@@ -9,8 +9,8 @@ export default app => {
     debugRequest('Current Currencies Request Received')
     const baseFiat = {
       USD: {
-        symbol: 'USD',
-        name: 'US Dollar'
+        symbol: 'CAD',
+        name: 'Canadian Dollar'
       },
       EUR: {
         symbol: 'EUR',

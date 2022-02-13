@@ -9,23 +9,23 @@ const handler = function (defaultValue = 42) {
 
 export default {
   status: {
-    invalidFiatAmount: true,
+    invalidFiatAmount: false,
     invalidDigitalAmount: true,
-    invalidAddress: true,
+    invalidAddress: false,
     invalidFiatAbove: false,
     invalidFiatBelow: false
   },
   orderInfo: {
-    fiatCurrency: 'USD',
-    digitalCurrency: 'ETH',
-    requestedCurrency: 'ETH',
-    fiatAmount: 0,
-    fiatTotal: 0,
-    digitalAmount: 1,
+    fiatCurrency: 'EUR',
+    digitalCurrency: 'KES',
+    requestedCurrency: 'KES',
+    fiatAmount: 50,
+    fiatTotal: 50,
+    digitalAmount: 6473,
     digitalAddress: '',
     userId: '',
     linkQuery: {}
   },
-  minFiat: new Proxy({USD: 50}, handler(50)),
-  maxFiat: new Proxy({USD: 20000}, handler(20000))
+  minFiat: new Proxy({EUR: 50}, handler(50)),
+  maxFiat: new Proxy({EUR: 20000}, handler(20000))
 };
