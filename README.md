@@ -475,6 +475,28 @@ To create the database we need to use the following command:
 
 ```
 > use snapshotdb
+>db.createCollection("editCustomer")
+ db.createCollection("editDiscount")
+{ "ok" : 1 }
+> db.createCollection("editProduct")
+{ "ok" : 1 }
+> db.createCollection("editUser")
+{ "ok" : 1 }
+> db.createCollection("editVariant")
+{ "ok" : 1 }
+> db.createCollection("newCustomer")
+{ "ok" : 1 }
+> db.createCollection("newDiscount")
+{ "ok" : 1 }
+> db.createCollection("newProduct")
+{ "ok" : 1 }
+> db.createCollection("newRedemption")
+{ "ok" : 1 }
+> db.createCollection("newUser")
+{ "ok" : 1 }
+> db.createCollection("newVariant")
+{ "ok" : 1 }
+> db.createCollection("saveCustomer")
 ```
 
 Since `snapshotdb` doesn't exist, MongoDB will create it and switch to it. Now we'll add the collections with:
